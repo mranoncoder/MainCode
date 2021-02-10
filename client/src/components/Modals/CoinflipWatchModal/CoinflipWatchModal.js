@@ -6,7 +6,7 @@ import { CountDownTimer } from '../../'
 import black from '../../../static/coin-heads.png'
 import red from '../../../static/coin-tails.png'
 
-import './CoinflipWatchModal.css'
+import './CoinflipWatchModal.scss'
 
 const IMAGE_URL = 'https://steamcommunity-a.akamaihd.net/economy/image/'
 const WAITING_COUNTDOWN = 120

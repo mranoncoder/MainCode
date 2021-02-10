@@ -5,7 +5,7 @@ import { CoinflipInventoryItem } from '../../../containers'
 import { NotificationManager } from 'react-notifications'
 import { getCoinflipRange, getCoinflipTotal } from '../../../util/coinflip'
 
-import './CoinflipJoinModal.css'
+import './CoinflipJoinModal.scss'
 
 const IMAGE_URL = 'https://steamcommunity-a.akamaihd.net/economy/image/'
 

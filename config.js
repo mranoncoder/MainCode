@@ -23,15 +23,15 @@ const database = {
 }
 
 const metadata = {
-  name: 'H1Z1Brawl',
-  url: 'h1z1brawl.com',
-  email: 'support@h1z1brawl.com',
+  name: 'deinmutter',
+  url: 'deinmutter.com',
+  email: 'support@deinmutter.com',
   discord: 'https://discord.gg/GMbkhkv',
   twitter: 'https://twitter.com/h1z1brawl',
-  useLanding: true,
-  gameId: 440,
+  useLanding: false,
+  gameId: 730,
   contextId: 2,
-  gameName: 'H1Z1Brawl'
+  gameName: 'deinmutter'
 }
 
 const coinflip = {
@@ -64,7 +64,7 @@ const tax = {
 
 const inventory = {
   cacheTimeout: 24 * 60 * 60, //1 day
-  reloadCooldown: 60,
+  reloadCooldown: 10,
   endpoints: {
     default: 'inventory',
     forceReload: 'inventory/force'
@@ -88,7 +88,7 @@ const socket = {
 }
 
 const bots = {
-  domain: 'h1z1brawl.com',
+  domain: 'deinmutter.com',
   pollTime: 5 * 1000, /* 5 seconds */
   cancelTime: 2 * 60 * 1000, /* 2 minutes */
   confirmationTime: 15 * 1000, /* 15 seconds */
@@ -101,7 +101,7 @@ const rake = {
 }
 
 const chat = {
-  minLevel: -1 
+  minLevel: 3
 }
 
 module.exports = { //not transpiled

@@ -4,7 +4,7 @@ import { CoinflipInventoryItem } from '../../../containers'
 import { NotificationManager } from 'react-notifications'
 import config from '../../../../../config'
 
-import './JackpotDepositModal.css'
+import './JackpotDepositModal.scss'
 
 const IMAGE_URL = 'https://steamcommunity-a.akamaihd.net/economy/image/'
 const { minItems, maxItems, minAmount, itemThreshold } = config.jackpot

@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Modal from 'react-modal'
 import CoinflipOfferRow from './CoinflipOfferRow'
 
-import './CoinflipOffersModal.css'
+import './CoinflipOffersModal.scss'
 
 export default class CoinflipOffersModal extends Component {
 

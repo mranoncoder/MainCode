@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import './Giveaway.css'
+import './Giveaway.scss'
 
 const GIVEAWAY_URL = 'https://gleam.io/nmwfe/h1z1brawl-and-avgnickk-graffiti-hunting-rifle-giveaway'
 

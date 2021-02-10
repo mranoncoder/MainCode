@@ -11,7 +11,7 @@ import {
   historyLoadJackpot
 } from '../../actions'
 
-import './History.css'
+import './History.scss'
 
 const sortOptions = [
   {

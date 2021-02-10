@@ -224,7 +224,7 @@ class Chat extends Component {
       if (parts.length !== 5) {
         return this.sendBotMessage("Add bot format: /addbot <username> <password> <shared secret> <identity secret>")
       }
-      const [, accountName, password, sharedSecret, identitySecret] = parts
+      const [accountName, password, sharedSecret, identitySecret] = parts
       this.clearChat()
       return this.props.addBot(accountName, password, sharedSecret, identitySecret)
     } else if (message.indexOf('/removebot') === 0) {

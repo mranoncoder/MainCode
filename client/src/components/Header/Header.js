@@ -6,7 +6,7 @@ import FontAwesome from 'react-fontawesome'
 import config from '../../../../config'
 import { UserToggle } from '../'
 import logo from '../../static/logo.png'
-import './Header.css'
+import './Header.scss'
 
 class Header extends Component {
 

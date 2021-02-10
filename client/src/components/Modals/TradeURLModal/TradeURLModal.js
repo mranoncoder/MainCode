@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Modal from 'react-modal'
 import { Input } from 'semantic-ui-react'
 
-import './TradeURLModal.css'
+import './TradeURLModal.scss'
 
 export default class TradeURLModal extends Component {
 
