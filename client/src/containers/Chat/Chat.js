@@ -10,6 +10,7 @@ import { sendChat, receiveChat, loadChat, deleteMessage, banUser, muteUser, remo
 import { api } from '../../../../config'
 import { futureDateFromText, getCommandProperties } from '../../util/chat'
 import logo from '../../static/logo.png'
+import logoBot from '../../static/bot.svg'
 import moment from 'moment'
 import config from '../../../../config'
 import { LinkContainer } from 'react-router-bootstrap'
@@ -141,7 +142,7 @@ class Chat extends Component {
     this.props.receiveChat({
       user: {
         level: "bot",
-        image: logo,
+        image: logoBot,
         name: config.metadata.name + ' Bot'
       },
       message

@@ -1,6 +1,7 @@
 import { default as Bot } from '../bot'
 import SteamUser from 'steam-user'
 import SteamTotp from 'steam-totp'
+import config from '../../../../config'
 
 Bot.prototype.createClient = function() {
   this.client = new SteamUser()
@@ -56,7 +57,10 @@ Bot.prototype.disconnected = function(eresult, message) {
 }
 
 Bot.prototype.loggedOn = function() {
-  this.log('logged onto Steam')
+  this.client.setPersona(1);
+  this.client.gamesPlayed(config.bots.gamesPlay)
+  this.client.chatMessage(config.GlobalAdmin.mainAdmin, "Bot is online sir!.");
+  this.log('logged into Steam! Bot is Now online!' + config.GlobalAdmin.mainAdmin)
 }
 
 Bot.prototype.steamGuard = function(domain, callback) {

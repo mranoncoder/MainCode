@@ -21,6 +21,9 @@ const database = {
   uri: process.env.MONGODB_URI || 'mongodb://localhost',
   redis: process.env.REDIS_URL || ''
 }
+const GlobalAdmin = {
+  mainAdmin: '76561199109749341'
+}
 
 const metadata = {
   name: 'deinmutter',
@@ -89,6 +92,7 @@ const socket = {
 
 const bots = {
   domain: 'deinmutter.com',
+  gamesPlay: 730, //Game which bot Play!
   pollTime: 5 * 1000, /* 5 seconds */
   cancelTime: 2 * 60 * 1000, /* 2 minutes */
   confirmationTime: 15 * 1000, /* 15 seconds */
@@ -96,7 +100,7 @@ const bots = {
 
 const rake = {
   automatedRakeTime: 60 * 60 * 1000, /* 1 hour */
-  rakeAccount: process.env.RAKE_ACCOUNT || '76561198987351749',
+  rakeAccount: process.env.RAKE_ACCOUNT || '76561199109749341', //global admin!
   automatedRakeEnabled: false,
 }
 
@@ -119,4 +123,5 @@ module.exports = { //not transpiled
   bots: bots,
   rake: rake,
   chat: chat,
+  GlobalAdmin: GlobalAdmin
 }
