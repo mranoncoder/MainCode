@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Modal from 'react-modal'
 
-import './TradeOfferModal.scss'
+import './TradeOfferModal.css'
 
 export default class TradeOfferModal extends Component {
 

@@ -14,7 +14,7 @@ import { getWinnerChance, getJackpotTotal, getJackpotStats, getTotalJackpotItems
 import { startJackpotRolling, loadJackpot, endJackpotRolling, endJackpotRound, newJackpotRound, updateJackpotRound, requestInventory, forceRefreshInventory, depositJackpotItems } from '../../actions'
 import config from '../../../../config'
 
-import './Jackpot.scss'
+import './Jackpot.css'
 
 const IMAGE_URL = 'https://steamcommunity-a.akamaihd.net/economy/image/'
 

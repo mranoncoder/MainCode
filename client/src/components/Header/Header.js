@@ -6,7 +6,7 @@ import FontAwesome from 'react-fontawesome'
 import config from '../../../../config'
 import { UserToggle } from '../'
 import logo from '../../static/logo.png'
-import './Header.scss'
+import './Header.css'
 
 class Header extends Component {
 
@@ -55,7 +55,7 @@ class Header extends Component {
                 </LinkContainer>
               </NavDropdown>
             }
-            {/* <NavDropdown title="Other" id="nav-dropdown">
+            { <NavDropdown title="Other" id="nav-dropdown">
               <LinkContainer activeClassName="" to="/giveaway">
                 <MenuItem>
                   <FontAwesome name="gift" />
@@ -72,7 +72,7 @@ class Header extends Component {
                   <FontAwesome name="envelope-o" />
                   Support
                 </MenuItem>
-            </NavDropdown> */}
+            </NavDropdown> }
           </Nav>
           <Nav pullRight>
             <MenuItem href={config.metadata.discord} target="_blank" className="no-border">

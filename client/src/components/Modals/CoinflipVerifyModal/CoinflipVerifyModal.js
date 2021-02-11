@@ -4,7 +4,7 @@ import { Input } from 'semantic-ui-react'
 import { NotificationManager } from 'react-notifications'
 import md5 from 'md5'
 
-import './CoinflipVerifyModal.scss'
+import './CoinflipVerifyModal.css'
 
 export default class CoinflipVerifyModal extends Component {
 

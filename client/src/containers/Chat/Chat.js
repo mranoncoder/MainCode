@@ -12,6 +12,7 @@ import { futureDateFromText, getCommandProperties } from '../../util/chat'
 import logo from '../../static/logo.png'
 import moment from 'moment'
 import config from '../../../../config'
+import { LinkContainer } from 'react-router-bootstrap'
 
 import FourHead from '../../static/emotes/4Head.png'
 import ANELE from '../../static/emotes/ANELE.png'
@@ -33,7 +34,7 @@ import PogChamp from '../../static/emotes/PogChamp.png'
 import SMOrc from '../../static/emotes/SMOrc.png'
 import SwiftRage from '../../static/emotes/SwiftRage.png'
 import WutFace from '../../static/emotes/WutFace.png'
-
+import giveaway from '../../components/Giveaway/Giveaway'
 import './Chat.css'
 
 const messages = [
@@ -139,7 +140,7 @@ class Chat extends Component {
   sendBotMessage(message) {
     this.props.receiveChat({
       user: {
-        level: 999,
+        level: "bot",
         image: logo,
         name: config.metadata.name + ' Bot'
       },
@@ -269,11 +270,11 @@ class Chat extends Component {
           <FontAwesome name={iconClass} onClick={this.handleClick} />
         </div>
         <div className={`Chat ${chatClass}`}>
-          {/* <div className="Chat__Advertisement">
+          { <div className="Chat__Advertisement">
             <LinkContainer activeClassName="" to="/giveaway">
               <img src={giveaway} alt="giveaway" />
             </LinkContainer>
-          </div> */}
+          </div> }
           <div className="Chat__Header">
             <span className="Chat__Header-Wrapper">
               <FontAwesome name="users" className="Chat__Header-Icon" />

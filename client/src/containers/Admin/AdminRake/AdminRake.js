@@ -11,7 +11,7 @@ import {
   withdrawAllRake
 } from '../../../actions'
 
-import '../Admin.scss'
+import '../Admin.css'
 
 const sortOptions = [
   {

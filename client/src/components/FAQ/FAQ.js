@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Grid } from 'react-bootstrap'
 import config from '../../../../config'
 
-import './FAQ.scss'
+import './FAQ.css'
 
 class FAQ extends Component {
 

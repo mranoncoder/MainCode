@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import './404.scss'
+import './404.css'
 
 class NotFound extends Component {
 
